@@ -53,6 +53,9 @@ public class InscripcionService {
 //Crear la inscripción con estado ACTIVA.
 //Guardar los cambios en la base de datos.
 
+    /*
+
+
     public Inscripcion inscribirParticipante (@Valid RequestInscribirParticipanteDto payload) {
         Curso curso = cursoRepository.findById(payload.cursoId).orElseThrow(() -> new CustomNotFoundException("No existe el curso"));
         if (curso.getEstado() == Estado.DISPONIBLE) {
@@ -65,6 +68,8 @@ public class InscripcionService {
             c.setEstado(payload.getEstado());
         }
     }
+
+     */
 
 
 }

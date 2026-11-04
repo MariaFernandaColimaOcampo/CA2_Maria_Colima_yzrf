@@ -53,4 +53,5 @@ public class RequestInscribirParticipanteDto {
     @NotNull (message = "No puede estar vacio")
     private Curso curso;
 
+
 }

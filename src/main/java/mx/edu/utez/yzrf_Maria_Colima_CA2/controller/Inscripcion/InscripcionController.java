@@ -23,12 +23,14 @@ public class InscripcionController {
         this.inscripcionService = inscripcionService;
     }
 
-
+/*
 @PostMapping
 public ResponseEntity<Inscripcion> inscribirParticipante (@RequestBody @Valid RequestInscribirParticipanteDto payload) {
     return ResponseEntity.status(HttpStatus.CREATED).body(inscripcionService.inscribirParticipante(payload));
 }
 
+
+ */
     @PatchMapping("/{id}/cancelar")
     public ResponseEntity<Inscripcion> cancelarInscripcion (@PathVariable Long id) {
         return ResponseEntity.status(HttpStatus.CREATED).body(inscripcionService.cancelarInscripcion(id));
